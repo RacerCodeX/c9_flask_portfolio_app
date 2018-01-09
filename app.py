@@ -51,7 +51,7 @@ def shopping_list_post():
               
               shop_list.append(item)
 
-              
+            shop_list.append('panda') #panda is always on the list
               
             return render_template('shopping_list.html', result="\n".join([str(item) for item in shop_list]))
           except ValueError:
